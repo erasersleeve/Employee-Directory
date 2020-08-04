@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "first_name": "Steve",
+        "last_name": "Sajam",
+        "department": "Public Relations"
+    },
+    {
+        "id": 2,
+        "first_name": "Tae-sty",
+        "last_name": "Steve",
+        "department": "Public Relations"
+    },
+    {
+        "id": 3,
+        "first_name": "Nicholas",
+        "last_name": "Plot",
+        "department": "Talent"
+    },
+    {
+        "id": 4,
+        "first_name": "Dan",
+        "last_name": "Tosis",
+        "department": "Talent"
+    },
+    {
+        "id": 5,
+        "first_name": "Nick",
+        "last_name": "Plot",
+        "department": "Executive"
+    },
+    {
+        "id": 6,
+        "first_name": "Clemency",
+        "last_name": "Baseku",
+        "department": "Engineer"
+    },
+    {
+        "id": 7,
+        "first_name": "Soren",
+        "last_name": "Kierkegaard",
+        "department": "Executive"
+    },
+    {
+        "id": 8,
+        "first_name": "Alex",
+        "last_name": "Honnold",
+        "department": "Engineer"
+    },
+    {
+        "id": 9,
+        "first_name": "Tommy",
+        "last_name": "Caldwell",
+        "department": "Engineer"
+    },
+    {
+        "id": 10,
+        "first_name": "Bobby",
+        "last_name": "Scarr",
+        "department": "Public Relations"
+    }
+]
