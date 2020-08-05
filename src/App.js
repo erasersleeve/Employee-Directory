@@ -6,6 +6,8 @@ import directoryJSON from "./directory.json";
 import './App.css';
 
 function App() {
+
+  //combine the states office ours
   const [all, setAll] = useState({
     all: directoryJSON,
   });
@@ -13,6 +15,10 @@ function App() {
   const [filtered, setFiltered] = useState({
     filtered: directoryJSON,
   });
+
+  const [sorted, setSorted] = useState({
+    sorted: "unordered"
+  })
   
 
   const findEmployee = event => {
@@ -26,13 +32,49 @@ function App() {
     // console.log(filtered);
   }
   
-  // keep a value filter in your component state and use that to see if it is contained as a substring in any of the array element properties.
+  const sort = () => {
+    console.log(sorted);
+    if (sorted.sorted=="unordered" || sorted.sorted=="descending") {
+      console.log(filtered.filtered);
+      const results = filtered.filtered.sort(
+        //metric, i.e. something to measure
+        function(a, b){
+          var x = a.first_name.toLowerCase();
+          var y = b.first_name.toLowerCase();
+          if (x < y) {return -1;}
+          if (x > y) {return 1;}
+          return 0;
+        }); 
+      setSorted({
+        sorted:"ascending"
+      })
+      setFiltered({
+        filtered: results
+      }) 
+    } else {
+      const results = filtered.filtered.sort(
+        //metric, i.e. something to measure
+        function(a, b){
+          var x = a.first_name.toLowerCase();
+          var y = b.first_name.toLowerCase();
+          if (x < y) {return 1;}
+          if (x > y) {return -1;}
+          return 0;
+        })
+      setSorted({
+        sorted:"descending"
+      })
+      setFiltered({
+        filtered: results
+      }) 
+    }
 
+  }
   
   return (
     <>
       {/* <Jumbotron/> */}
-      <Jumbotron findEmployee={findEmployee}/>
+      <Jumbotron findEmployee={findEmployee} sort={sort}/>
       <Directory users={filtered.filtered}/>
     </>
   );
