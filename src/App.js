@@ -7,7 +7,6 @@ import './App.css';
 
 function App() {
 
-  //combine the states office hours
   //if there is only one key value can write like this:
   // const [all, setAll] = useState(directoryJSON);
   //setAll is never called, so it is redundant. Could Just use filtered and directoryJSON to represent All (line 31).
