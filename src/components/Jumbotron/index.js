@@ -3,7 +3,7 @@ import Search from "../Search/index"
 import "./style.css";
 
 
-export default  function Jumbotron( {findEmployee, sort} ) {
+export default  function Jumbotron( {findEmployee} ) {
 
 
     return (
@@ -13,7 +13,6 @@ export default  function Jumbotron( {findEmployee, sort} ) {
             <hr className="my-4"/>
             <div className="text-center">
             <Search findEmployee={findEmployee}/>
-            <button onClick={sort}>Sort</button>
             </div>
     
         </div>

@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import { render } from "@testing-library/react";
 const directory = require("../../directory.json");
 
-function Directory ({users}) {
+function Directory ({users, sort}) {
     return (
         <div className="container text-center">
+            <button className="btn" onClick={sort}>Sort</button>
             <table style={{width:"100%"}}>
                 <tr>
                     <th>First Name</th>
