@@ -11,4 +11,4 @@
   
   ## Screenshots
 
-  ![1](https://github.com/erasersleeve/Employee-Directory/blob/master/public/assets/Capture%20d%E2%80%99%C3%A9cran%20.png)
+  ![1](https://github.com/erasersleeve/Employee-Directory/blob/master/public/assets/Capture%20d%E2%80%99%C3%A9cran.png)
