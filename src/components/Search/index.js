@@ -20,7 +20,7 @@ export default function Search( {findEmployee} ) {
 
      return (
           <section className="cell containter">
-               <input type="text" className="input col-2 text-center" placeholder="Search" onChange={findEmployee}/>
+               <input type="text" className="input col-2 text-center" placeholder="Enter a First Name!" onChange={findEmployee}/>
                <br></br>
                <button className="btn my-2 my-sm-0" type="submit">Search</button>
           </section>

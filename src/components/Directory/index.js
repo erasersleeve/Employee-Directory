@@ -9,22 +9,24 @@ function Directory ({users, sort}) {
         {/* <div className="text-center">
             <button className="btn" onClick={sort}>Sort Employees</button>
         </div> */}
-        <div className="container text-center">
-            <table style={{width:"100%"}}>
+        <div className="text-center table-responsive">
+         
+            <button className="btn" onClick={sort}>Sort Employees</button>
+                        
+            <table className="table">
                 <thead>
+                    
                     <tr>
-                        <th className="text-center"> 
-                            <button className="btn" onClick={sort}>Sort Employees</button>
-                        </th>
+                        <th style={{width:"33%"}}>First Name</th>
+                        <th style={{width:"33%"}}>Last Name</th>
+                        <th style={{width:"33%"}}>Department</th>
                     </tr>
+                        
                 </thead>
-                <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Department</th>
-                </tr>
+                <tbody>
                 {users.map(person => {
                     return (
+                
                         <tr>
                             <td>{person.first_name}</td>
                             <td>{person.last_name}</td>
@@ -32,6 +34,7 @@ function Directory ({users, sort}) {
                         </tr>
                         )
                 })}
+                </tbody>
             </table>
         </div>
         </>

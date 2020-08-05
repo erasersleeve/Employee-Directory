@@ -75,9 +75,11 @@ function App() {
   
   return (
     <>
-      {/* <Jumbotron/> */}
+      <div className="container">
       <Jumbotron findEmployee={findEmployee}/>
       <Directory users={filtered.filtered}  sort={sort}/>
+      </div>
+      
     </>
   );
 }

@@ -1,6 +1,9 @@
 .btn {
-    text-align: center;
+    /* text-align: center;
     padding: 3px;
+    width: 100%;
+    display: flex;
+    justify-content: center; */
   }
 th {
       text-align:center;
