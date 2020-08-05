@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { render } from "@testing-library/react";
 const directory = require("../../directory.json");
 
-function Directory () {
+function Directory ({users}) {
     return (
         <div className="container text-center">
             <table style={{width:"100%"}}>
@@ -11,7 +11,7 @@ function Directory () {
                     <th>Last Name</th>
                     <th>Department</th>
                 </tr>
-                {directory.map(person => {
+                {users.map(person => {
                     return (
                         <tr>
                             <td>{person.first_name}</td>
